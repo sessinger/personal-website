@@ -1,0 +1,177 @@
+html{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0;
+	padding: 20px;
+}
+
+h2 {
+color: orange;
+}
+
+
+nav ul ul {
+	display: none;
+}
+	nav ul li:hover > ul {
+		display: block;
+		
+	}
+
+nav ul {
+	width:760px;
+	background: grey; 
+	padding: 0 0px;
+	border-radius: 0px;  
+	list-style: none;
+	position: relative;
+	margin-top: 2px;
+	font-family:"Times-New-Roman";
+	float:left;
+	display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+nav ul li {
+	float: left;
+}
+	nav ul li:hover {
+		background: #4b545f;
+	}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	
+	nav ul li a {
+		display: block; padding: 10px 46px; 
+
+		color: black; font-size:15px; font-weight: bold; text-decoration: none;
+	}
+	
+nav ul ul {
+	background: #5f6975; border-radius: 5px; padding: 0px;
+	position: absolute; top: 100%; width:auto; margin-top:0px;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position: relative;
+		
+	}
+		nav ul ul li a {
+			padding: 5px 45px;
+			font-size:13px;
+			font-family:"Times-New-Roman";
+
+		}	
+			nav ul ul li a:hover {
+				background: #4b545f;
+				color:orange;
+			}
+
+nav ul ul ul {
+	position: absolute; left: 100%; top:0;
+}
+
+
+
+.line-separator{
+height:2px;
+background:#717171;
+}
+
+#body1 p {
+font-family:"helvetica-neue";
+font-size: 15px;
+color: orange;
+}
+
+#page-container {
+width: 760px;
+margin: auto;
+padding: 10px;
+background-image:url('graphpaper.png');
+border-color: black;
+border-style: solid;
+}
+
+
+#header {
+float: left;
+height: 187px;
+width: 264px;
+background-image:url('myphoto.png');
+border-style: solid;
+border-color: grey;
+border-left-width: 1px;
+border-top-width: 1px;
+border-right-width: 0;
+border-bottom-width: 0;
+}
+
+#body1 {
+padding: 10px;
+padding-left: 15px;
+height: 168px;
+margin-left: 267px;
+background-color: grey;
+}
+#body1 a:link {text-decoration:none; color:yellow;} /* unvisited link */
+#body1 a:visited {text-decoration:none; color:yellow;} /* visited link */
+#body1 a:hover {text-decoration:underline;}  /* mouse over link */
+#body1 a:active {text-decoration:underline;}  /* selected link */
+
+#body2 {
+clear: both;
+height: 30px;
+margin-top: 2px;
+background-color: grey;
+padding: 5px;
+}
+
+#about {
+padding: 10px;
+}
+
+#projects-section h3 {
+color: blue;
+font: bold, 15px;
+}
+
+#publications {
+padding: 10px;
+}
+#publications a:link {text-decoration:none; color:blue;} /* unvisited link */
+#publications a:visited {text-decoration:none; color:blue;} /* visited link */
+#publications a:hover {text-decoration:underline;}  /* mouse over link */
+#publications a:active {text-decoration:underline;}  /* selected link */
+
+
+#patents {
+padding: 10px;
+}
+#patents a:link {text-decoration:none; color: #800080;}  /* unvisited link */
+#patents a:visited {text-decoration:none; color: #800080;} /* visited link */
+#patents a:hover {text-decoration:underline;}   /* mouse over link */
+#patents a:active {text-decoration:underline;}  /* selected link */
+
+#teaching {
+padding: 10px;
+}
+
+#awards {
+padding: 10px;
+}
+
+#footer {
+padding: 10px;
+margin: auto;
+margin-top: 2px;
+background-color: grey;
+}

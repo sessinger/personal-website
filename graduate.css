@@ -1,0 +1,299 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+#top-header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.header-context h1 {
+    font-size: 1.8em;
+    color: #454545;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation in Header */
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+
+header nav ul li {
+    font-size: 1em;
+}
+
+header nav ul li a {
+    color: #07A;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+header nav ul li a:hover {
+    color: #004999;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+
+    .header-text {
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+/* Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #454545;
+    background-color: #fefefe;
+    	background-image:url('graphpaper.png');
+
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Container */
+#page-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #454545;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #454545;
+}
+
+/* Link Colors */
+a {
+    color: #07A; /* Link color */
+    transition: all 0.3s ease;
+}
+
+a:visited {
+    color: #07A; /* Visited link color */
+}
+
+a:hover {
+    color: #004999;
+}
+
+a:visited:hover {
+    color: #004999; /* Inverted visited color on hover */
+}
+
+/* Article (Publications) */
+article {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    /*border-bottom: 1px solid #e6e6e6;*/
+}
+
+
+/* Separator line */
+.line-separator {
+    margin: 30px 0;
+    border-top: 1px solid #e6e6e6;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+nav ul li {
+    font-size: 0.95em;
+}
+
+nav ul li a {
+    font-weight: 500;
+    color: #0066cc;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.quickthought-img {
+    width: 200px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.quickthought {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Projects Section */
+.projects-section {
+}
+
+.graduate-header {
+    display: flex;
+    gap: 20px;
+    background-color: grey;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #454545;
+}
+
+.graduate-header img {
+    height: 187px;
+    width: 264px;
+}
+
+.graduate-header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: orange;
+    opacity: 0.75;
+}
+
+.drexel-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.graduate-intro {
+    background-color: #fff;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+/* Article (Projects Section) */
+#projects-section article {
+    padding: 5px 0px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#projects-section h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 15px 0px;
+    color: #454545;
+}
+
+/* Image Styling */
+.project-figure img {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Project Descriptions */
+.project-description {
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-figure {
+        margin: 0 0 20px 0;
+    }
+
+    .project-description {
+        width: 100%;
+        padding: 0px;
+    }
+    #projects-section h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
